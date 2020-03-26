@@ -1,9 +1,6 @@
 
-# coding: utf-8
-
-# In[ ]:
-
-# Tic Tac Toe game
+# NOUGHTS AND CROSSES AI VS HUMAN
+# MANUALLY TAUGHT STRATEGY, WITHOUT USE OF MINIMAX 
 
 # creating a board
 board = [' ' for x in range(10)]
@@ -159,8 +156,6 @@ while True:
     else:
         break
 
-
-# In[ ]:
 
 
 
