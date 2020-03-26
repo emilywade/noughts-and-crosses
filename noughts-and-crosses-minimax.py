@@ -1,9 +1,6 @@
 
-# coding: utf-8
-
-# In[ ]:
-
-#NOUGHTS AND CROSSES MINIMAX ALGORITHM
+#NOUGHTS AND CROSSES AI VS HUMAN
+# USING MINIMAX ALGORITHM
 
 import time # to quantify difference between simple minimax and optimised methods
 
@@ -193,9 +190,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-# In[ ]:
-
 
 
