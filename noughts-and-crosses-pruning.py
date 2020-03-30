@@ -1,8 +1,4 @@
 
-# coding: utf-8
-
-# In[1]:
-
 import time
 
 class Game:
@@ -193,8 +189,6 @@ def main():
 if __name__ == "__main__":
     main()
 
-
-# In[ ]:
 
 
 
