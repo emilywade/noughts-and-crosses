@@ -178,10 +178,11 @@ time taken to calculate MAX’s first move, both with and without pruning,
 we can see a 99.28% decrease in evaluation time when using this
 optimisation technique:
 
-|        **Method**        | **Avg Evaluation Time (s) (4sf)** |  |  
-| :----------------------: | :-------------------------------: | :-: |
-| Simple Minimax Algorithm |               7.584               |  |
-| Added Alpha-Beat Pruning |              0.05430              |  |
+|        **Method**        | **Avg Evaluation Time (s) (4sf)** |    
+| :----------------------: | :-------------------------------: | 
+| Simple Minimax Algorithm |               7.584               | 
+| Added Alpha-Beat Pruning |              0.05430              | 
+
 
 # Conclusion
 
