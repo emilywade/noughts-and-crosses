@@ -14,9 +14,7 @@ Noughts & Crosses is a zero-sum, sequential game with perfect
 information. It is typically played on a 3x3 grid, with one player
 acting as ‘O’ and the other acting as ‘X’. The winner is the first
 player to place three of their marks in a horizontal, vertical or
-diagonal row. The payoff functions for each player are
-\(u:states \rightarrow \mathbb{R}\), where the strategy space is the set
-of all possible board configurations (or states) at any given time.
+diagonal row. 
 
 Through the use of AI, Noughts & Crosses can be played as a
 single-player game by teaching the computer a ’best strategy’ for any
@@ -28,7 +26,7 @@ The state-space complexity of a game is the set of all legal game states
 branching from the intitial state. In Noughts & Crosses, the initial
 state is an empty board, and a move is legal given that the square is
 currently empty. This gives us the state-space complexity upper bound of
-\(3^9 = 19,683\), since there are three states for each of the nine
+3^9 = 19,683, since there are three states for each of the nine
 squares. However, this calculation includes many illegal moves,
 including five noughts and zero crosses, and so it is apparent from the
 offset that there exist simplifications to our game tree exploration. We
@@ -71,10 +69,6 @@ MAX by trying to obtain the lowest score possible.
 
 This process is called the Minimax decision; it maximises the utility
 assuming that the opponent is also playing optimally to minimse it.
-
-![Applying Algorithm](minimax-def.png)
-
-![Determining Utilities](utilities-minimax.jpg)
 
 ## Alpha-Beta Pruning
 
@@ -184,7 +178,7 @@ time taken to calculate MAX’s first move, both with and without pruning,
 we can see a 99.28% decrease in evaluation time when using this
 optimisation technique:
 
-|        **Method**        | **Avg Evaluation Time (s) (4sf)** |  |
+|        **Method**        | **Avg Evaluation Time (s) (4sf)** |  |  
 | :----------------------: | :-------------------------------: | :-: |
 | Simple Minimax Algorithm |               7.584               |  |
 | Added Alpha-Beat Pruning |              0.05430              |  |
@@ -197,18 +191,3 @@ create an AI that is impossible to beat in Noughts & Crosses.
 Introducing Alpha-Beta Pruning to this provides a much more elegant
 algorithm, dramatically decreasing evaluation time and speeding up the
 game for the opponent.
-
-<span>9</span> Scratch: Game Tree.  
-`https://en.scratch-wiki.info/wiki/Game_Tree`
-
-Wikipedia: Game Complexity.  
-`https://en.wikipedia.org/wiki/Game_complexity`
-
-R Jain: Minimax Algorithm with Alpha-beta pruning,  
-`https://www.hackerearth.com/blog/developers/minimax-algorithm-alpha-beta-pruning`
-
-A A. Elnaggar, M Gadallah, M A Aziem, H El-Deeb. *A Comparative Study of
-Game Tree Searching Methods*. \[*IJACSA*.\] Vol. 5, No. 5, 2014.
-
-M Krivokuća: Minimax with Alpha-Beta Pruning in Python  
-`https://stackabuse.com/minimax-and-alpha-beta-pruning-in-python/`
